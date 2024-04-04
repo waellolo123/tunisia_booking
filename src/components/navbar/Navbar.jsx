@@ -32,7 +32,7 @@ const Navbar = () => {
      </div>
      <div className="">
       {showModal && (
-        <div className="absolute top-16 right-[270px] shadow-md flex flex-col gap-4 p-4 rounded-md" onClick={toggleModal}>
+        <div className="absolute top-16 right-[270px] shadow-md flex flex-col gap-4 p-4 rounded-md z-20" onClick={toggleModal}>
           <Link href="/reservations" className="text-slate-500">Reservations</Link>
           <button className="text-slate-500 text-center" onClick={() => signOut()}>Logout</button>
         </div>
